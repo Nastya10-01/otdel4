@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ИТ-отдел больницы</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <a href="https://ashacgb74.ru/" target="_blank">
+  	<img src="logo.png" alt="Логотип" class="logo" />
+      </a>
+      <nav>
+        <a href="sayt.html" class="active">Главная</a>
+        <a href="news.html">Новости</a>
+        <a href="yslygi.html">Услуги</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Информационные технологии на страже медицины</h1>
+      <p>ИТ-отдел больницы обеспечивает стабильную работу всех цифровых решений, помогает медицинскому персоналу и защищает данные пациентов.</p>
+    </section>
+
+    <section class="about">
+      <h2>О отделе</h2>
+      <p>ИТ-отдел отвечает за работу всех информационных систем, сетей и оборудования в больнице. Мы следим за безопасностью данных и внедряем новые технологии.</p>
+      <ul>
+        <li>Поддержка медицинских информационных систем</li>
+        <li>Информационная безопасность</li>
+        <li>Обслуживание ИТ-инфраструктуры</li>
+        <li>Обучение сотрудников</li>
+      </ul>
+    </section>
+
+    <section class="services">
+      <h2>Наши услуги</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Техническая поддержка</h3>
+          <p>Решение проблем с компьютерами, принтерами и сетью.</p>
+        </div>
+        <div class="card">
+          <h3>Информационные системы</h3>
+          <p>Поддержка ЭМК, документооборота и других цифровых платформ.</p>
+        </div>
+        <div class="card">
+          <h3>Информационная безопасность</h3>
+          <p>Защита данных пациентов и сотрудников.</p>
+        </div>
+        <div class="card">
+          <h3>Обучение</h3>
+          <p>Проведение курсов по ИТ-инструментам для персонала.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h2>Наша команда</h2>
+      <p><strong>Ширшов Андрей Григорьевич</strong> — Главный программист</p>
+      <p><strong>Ширшова Гузель</strong> — Экономист</p>
+    </section>
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p><strong>Адрес:</strong> РФ, обл. Челябинская, г. Аша, ул. Некрасова, 19, Этаж 3, площадь 32</p>
+      <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+      <p><strong>Время работы:</strong> Пн–Пт, 8:00–17:30</p>
+      <form>
+        <input type="text" placeholder="Имя" required />
+        <input type="text" placeholder="Отдел" required />
+        <textarea placeholder="Опишите вашу проблему ..." required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>ИТ-отдел Больницы</strong>. Все права защищены.</p>
+  </footer>
+
+<!-- Кнопка прокрутки вверх -->
+<button id="scrollTopBtn" title="Наверх">↑</button>
+
+<!-- Подключение JavaScript -->
+<script>
+  // Показывать кнопку при прокрутке
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  window.onscroll = function () {
+    scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  };
+
+  // Прокрутка вверх при клике
+  scrollTopBtn.onclick = function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+</script>
+</body>
+</html>

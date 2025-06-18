@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Услуги | ИТ-отдел больницы</title>
+  <link rel="stylesheet" href="yslygi.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <a href="https://ashacgb74.ru/" target="_blank">
+  	<img src="logo.png" alt="Логотип" class="logo" />
+      </a>
+      <nav>
+        <a href="sayt.html">Главная</a>
+        <a href="yslygi.html" class="active">Услуги</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Подробно о наших услугах</h1>
+
+    <section class="service-block">
+      <h2>1. Техническая поддержка</h2>
+      <p>Наша команда предоставляет оперативную помощь пользователям при возникновении технических неисправностей. Мы устраняем проблемы с компьютерами, принтерами, сканерами и сетевым оборудованием.</p>
+      <ul>
+        <li>Настройка и ремонт техники</li>
+        <li>Подключение к сети и интернету</li>
+        <li>Устранение сбоев ПО и ОС</li>
+      </ul>
+    </section>
+
+    <section class="service-block">
+      <h2>2. Поддержка информационных систем</h2>
+      <p>Мы отвечаем за стабильную работу всех медицинских и административных цифровых систем: ЭМК, системы документооборота, расписания и др.</p>
+      <ul>
+        <li>Мониторинг и обновление ПО</li>
+        <li>Администрирование баз данных</li>
+        <li>Поддержка пользователей</li>
+      </ul>
+    </section>
+
+    <section class="service-block">
+      <h2>3. Информационная безопасность</h2>
+      <p>ИТ-отдел обеспечивает защиту персональных данных пациентов и сотрудников, реализует современные меры кибербезопасности.</p>
+      <ul>
+        <li>Антивирусная защита</li>
+        <li>Резервное копирование и восстановление</li>
+        <li>Контроль доступа и авторизация</li>
+      </ul>
+    </section>
+
+    <section class="service-block">
+      <h2>4. Обучение и сопровождение</h2>
+      <p>Мы проводим регулярные обучающие мероприятия для медицинского персонала по работе с информационными системами и технологиями.</p>
+      <ul>
+        <li>Обучающие семинары и вебинары</li>
+        <li>Индивидуальные консультации</li>
+        <li>Инструкции и методические материалы</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>ИТ-отдел Больницы</strong>. Все права защищены.</p>
+  </footer>
+
+<!-- Кнопка прокрутки вверх -->
+<button id="scrollTopBtn" title="Наверх">↑</button>
+
+<!-- JavaScript -->
+<script>
+  const scrollBtn = document.getElementById("scrollTopBtn");
+
+  window.addEventListener("scroll", () => {
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
+
+
+

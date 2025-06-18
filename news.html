@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Новости | ИТ-отдел больницы</title>
+  <link rel="stylesheet" href="news.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <a href="https://ashacgb74.ru/" target="_blank">
+  	<img src="logo.png" alt="Логотип" class="logo" />
+      </a>
+      <nav>
+        <a href="sayt.html">Главная</a>
+        <a href="news.html" class="active">Новости</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Новости и обновления</h1>
+
+    <section class="news-card">
+      <h2>Новая система учета пациентов внедрена</h2>
+      <p class="date">27 мая 2025</p>
+      <p>ИТ-отдел успешно завершил внедрение новой системы учета пациентов, которая позволит быстрее находить и обновлять медицинские данные.</p>
+    </section>
+
+    <section class="news-card">
+      <h2>Плановое обновление серверов</h2>
+      <p class="date">20 мая 2025</p>
+      <p>На этой неделе пройдёт обновление серверного оборудования. Возможны кратковременные перерывы в доступе к системам.</p>
+    </section>
+
+    <section class="news-card">
+      <h2>Обучение по информационной безопасности для сотрудников</h2>
+      <p class="date">13 мая 2025</p>
+      <p>Приглашаем персонал на курс по информационной безопасности. Подробности доступны через внутренний портал.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 <strong>ИТ-отдел Больницы</strong>. Все права защищены.</p>
+  </footer>
+
+<!-- Кнопка прокрутки вверх -->
+<button id="scrollTopBtn" title="Наверх">↑</button>
+
+<!-- JavaScript -->
+<script>
+  // Показ кнопки при прокрутке
+  const scrollTopBtn = document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll", () => {
+    scrollTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
+  });
+
+  // Прокрутка вверх
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
